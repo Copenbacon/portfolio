@@ -36,6 +36,7 @@
   font-size: 3em;
   position: fixed;
   right: 1%;
+  text-align: center;
 }
 
 .template {
@@ -111,7 +112,6 @@ article.portfolio-pieces:hover {
     display: block;
     margin: 0 auto;
     margin-top: 2%;
-    /*width: 25%;*/
   }
 
   .header-menu-ul li{
@@ -130,7 +130,7 @@ article.portfolio-pieces:hover {
   article.portfolio-pieces {
     display: inline-block;
     width: 45%;
-    margin: 2% 1%;
+    margin: 5% 1%;
   }
 
   .ccPic {
@@ -155,12 +155,16 @@ article.portfolio-pieces:hover {
   article.portfolio-pieces {
     display: inline-block;
     width: 30%;
-    margin: 2% 1%;
   }
 
   .ccPic {
     width: 28%;
     display: inline-block;;
     margin: 2%;
+    margin-top: 5%;
+  }
+
+  #home-top-third{
+    margin-top: 5%;
   }
 }
