@@ -57,6 +57,11 @@ article.portfolio-pieces img {
   width: 100%;
 }
 
+.ccPic img{
+  border-radius: 12%;
+  text-align: center;
+}
+
 .ccPic img:hover {
   opacity: .8;
 }
@@ -92,9 +97,6 @@ article.portfolio-pieces:hover {
 
 .index-title {
   text-align: center;
-  width: 90%;
-  margin: auto;
-  margin-top: 2%;
   color: black;
 }
 
@@ -148,6 +150,14 @@ article.portfolio-pieces:hover {
 
   span.hide {
     display: none;
+  }
+
+  #aboutMe-title{
+    margin-right: 8%;
+  }
+
+  #portfolio-title{
+    margin-right: 4%;
   }
 }
 
