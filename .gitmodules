@@ -1,0 +1,3 @@
+[submodule "vendor/IcoMoon-Free"]
+	path = vendor/IcoMoon-Free
+	url = https://github.com/Keyamoon/IcoMoon-Free.git
