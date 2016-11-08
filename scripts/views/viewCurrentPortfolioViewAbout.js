@@ -2,17 +2,6 @@
   var portfolioView = {};
   var AboutMeView = {};
 
-  portfolioView.handleMainNav = function () {
-    $('.header-menu').on('click', '.contentBtn', function() {
-      $('.contentBtn-content').hide();
-      var $idContent = $(this).data().content;
-      console.log($idContent, 'id Content');
-      $('#' + $idContent).show();
-      $idContent = '';
-    });
-    $('.header-menu .contentBtn:first').click();
-  };
-
   portfolioView.setTeasers = function() {
     $('.body-portfolio-item').hide();
 
@@ -36,7 +25,6 @@
       $('#home-top-third').append(article.toHtml('#portfolio-items-template'));
     });
     $('#blog-stats .words').text(Piece.numWordsAll());
-    portfolioView.handleMainNav();
     portfolioView.setTeasers();
   };
 
