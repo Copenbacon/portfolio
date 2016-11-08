@@ -36,12 +36,12 @@
             <span class="icon-menu"></span>
           </div>
           <ul class="header-menu-ul">
-            <a href="#" title="Home" class="contentBtn" data-content="home-middle-third"><li><span class="icon-home"></span> <span class="hide">Home</span></li></a>
+            <a href="/" title="Home" class="contentBtn" data-content="home-middle-third"><li><span class="icon-home"></span> <span class="hide">Home</span></li></a>
             <a href="https://github.com/Copenbacon" title="Github"><li><span class="icon-github"></span> <span class="hide">Github</span></li></a>
             <a href="https://www.linkedin.com/in/conor-clary-54b5682b" title="LinkedIn"><li><span class="icon-linkedin"></span> <span class="hide">LinkedIn</span></li></a>
             <a href="https://www.instagram.com/copenbacon/" title="Instagram"><li><span class="icon-instagram"></span> <span class="hide">Instagram</span></li></a>
             <a href="mailto:conor.clary@gmail.com" title="Email"><li> <span class="icon-mail"></span> <span class="hide">Correspond</span></li></a>
-            <a href="#" title="About me" class="contentBtn" data-content="home-top-third"><li><span class="icon-profile"></span> <span class="hide">Portfolio Pieces</span></li></a>
+            <a href="/portfolio" title="About me" class="contentBtn" data-content="home-top-third"><li><span class="icon-profile"></span> <span class="hide">Portfolio Pieces</span></li></a>
           </ul>
         </nav>
     </header>
@@ -59,79 +59,19 @@
     <footer id="blog-stats">
       <span>Total words in all bodies: </span><span class="words"></span>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="vendor/scripts/page.js"></script>
+    <script src="vendor/scripts/jquery-2.1.4.js"></script>
+    <script src="vendor/scripts/handlebars.js"></script>
     <script src="vendor/scripts/marked.js"></script>
+    <script src="vendor/scripts/html5sql.js"></script>
+    <!-- Models -->
     <script type='text/javascript' src='scripts/models/app.js'></script>
+    <!-- Views -->
     <script src="scripts/views/viewCurrentPortfolioViewAbout.js"></script>
+    <!-- Controllers -->
+    <script src="scripts/controllers/aboutPiece.js"></script>
+    <script src="scripts/controllers/portfolioPieces.js"></script>
+    <script src="scripts/controllers/routes.js"></script>
+
   </body>
 </html>
-
-<!-- <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale =1">
-    <link rel="stylesheet" href="vendor/styles/normalize.css">
-    <link rel="stylesheet" href="vendor/icons.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/layout.css">
-    <link rel="stylesheet" href="styles/modules.css">
-    <title>Conor Clary Portfolio</title>
-    <script id = "portfolio-items-template" type="text/x-handlebars-templates">
-      {{{h4}}}
-      <article class="portfolio-pieces" data-category="{{category}}">
-        <h1 id="title-portfolio-item">{{title}}</h1>
-          <a href="{{url}}"><img src="{{picture}}" alt="{{alt}}" id="{{category}}"/><figcaption id="figcaption-portfolio-item">{{description}}</figcaption></a>
-          {{publishStatus}}
-          {{{body}}}
-          <br>
-          <a href="#" class="read-on">Show More &rarr;</a>
-      </article>
-    </script>
-    <script id = "about-items-template" type="text/x-handlebars-templates">
-      {{{h4}}}
-      <figure class="ccPic">
-        <a href="{{url}}"><img src="{{img}}" alt="{{alt}}" height="{{height}}" width="{{width}}"></a>
-      </figure>
-      {{{body}}}
-    </script>
-  </head>
-
-  <body>
-    <header>
-        <nav class="header-menu">
-          <div class="menu-icon-div">
-            <span class="icon-menu"></span>
-          </div>
-          <ul class="header-menu-ul">
-            <a href="#" title="Home" class="contentBtn" data-content="home-top-third"><li><span class="icon-home"></span> <span class="hide">Home</span></li></a>
-            <a href="https://github.com/Copenbacon" title="Github"><li><span class="icon-github"></span> <span class="hide">Github</span></li></a>
-            <a href="https://www.linkedin.com/in/conor-clary-54b5682b" title="LinkedIn"><li><span class="icon-linkedin"></span> <span class="hide">LinkedIn</span></li></a>
-            <a href="https://www.instagram.com/copenbacon/" title="Instagram"><li><span class="icon-instagram"></span> <span class="hide">Instagram</span></li></a>
-            <a href="mailto:conor.clary@gmail.com" title="Email"><li> <span class="icon-mail"></span> <span class="hide">Correspond</span></li></a>
-            <a href="#" title="About me" class="contentBtn" data-content="home-middle-third"><li><span class="icon-profile"></span> <span class="hide">Conor Clary</span></li></a>
-          </ul>
-        </nav>
-    </header>
-
-    <section id="home-top-third" class="contentBtn-content">
-      <h4 class="index-title">Conor Clary Portfolio Pieces</h4>
-
-    </section>
-
-    <section id="home-middle-third" class="contentBtn-content">
-      <h4 class="index-title">About Me</h4>
-    </section>
-
-    <section id="home-bottom-third" class="contentBtn-content"></section>
-
-    <footer id="blog-stats">
-      <span>Total words in all bodies: </span><span class="words"></span>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-    <script src="vendor/scripts/marked.js"></script>
-    <script type='text/javascript' src='scripts/models/app.js'></script>
-    <script src="scripts/views/viewCurrentPortfolioViewAbout.js"></script>
-  </body>
-</html> -->
