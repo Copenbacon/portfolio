@@ -27,6 +27,18 @@
       </figure>
       {{{body}}}
     </script>
+    <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}"><h3>{{name}}</h3></a>
+        <p>Description: {{description}}</p>
+        <p>Primary Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+        {{#if watchers_count}}
+          <p>{{watchers_count}} watching this repo</p>
+        {{/if}}
+      </li>
+    </script>
   </head>
 
   <body>
@@ -42,6 +54,7 @@
             <a href="https://www.instagram.com/copenbacon/" title="Instagram"><li><span class="icon-instagram"></span> <span class="hide">Instagram</span></li></a>
             <a href="mailto:conor.clary@gmail.com" title="Email"><li> <span class="icon-mail"></span> <span class="hide">Correspond</span></li></a>
             <a href="/portfolio" title="About me" class="contentBtn" data-content="home-top-third"><li><span class="icon-profile"></span> <span class="hide">Portfolio Pieces</span></li></a>
+            <a href="/repo" title="Repos" class="contentBtn" data-content="home-bottom-third"><li><span class="icon-repo"></span> <span class="hide">Repos</span></li></a>
           </ul>
         </nav>
     </header>
@@ -54,23 +67,35 @@
       <h4 class="index-title" id="aboutMe-title">About Me</h4>
     </section>
 
-    <section id="home-bottom-third" class="contentBtn-content"></section>
+    <section id="home-bottom-third" class="contentBtn-content">
+      <h4 class="index-title" id="repo-title">Repos</h4>
+    </section>
 
     <footer id="blog-stats">
       <span>Total words in all bodies: </span><span class="words"></span>
     </footer>
-    <script src="vendor/scripts/page.js"></script>
+    <!-- Vendor Files -->
     <script src="vendor/scripts/jquery-2.1.4.js"></script>
     <script src="vendor/scripts/handlebars.js"></script>
     <script src="vendor/scripts/marked.js"></script>
     <script src="vendor/scripts/html5sql.js"></script>
+    <script src="vendor/scripts/page.js"></script>
+
+    <!-- Github Token -->
+    <script src="/githubToken.js"></script>
+
     <!-- Models -->
     <script type='text/javascript' src='scripts/models/app.js'></script>
+    <script src="/scripts/models/repo.js"></script>
+
     <!-- Views -->
     <script src="scripts/views/viewCurrentPortfolioViewAbout.js"></script>
+    <script src="/scripts/views/repoView.js"></script>
+
     <!-- Controllers -->
     <script src="scripts/controllers/aboutPiece.js"></script>
     <script src="scripts/controllers/portfolioPieces.js"></script>
+    <script src="scripts/controllers/repoController.js"></script>
     <script src="scripts/controllers/routes.js"></script>
 
   </body>

@@ -159,6 +159,10 @@ article.portfolio-pieces:hover {
   #portfolio-title{
     margin-right: 4%;
   }
+
+  #repo-title{
+    padding-top: 5%;
+  }
 }
 
 @media screen and (min-width:855px) {
