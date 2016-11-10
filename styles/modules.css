@@ -9,7 +9,7 @@
   list-style-type: none;
 }
 
-.menu-icon-div:active ul{
+.header-menu:active ul{
   display: block;
   list-style-type: none;
 }
