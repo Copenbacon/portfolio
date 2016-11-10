@@ -4,16 +4,14 @@
   repos.allRepos = [];
 
   repos.requestRepos = function(callback) {
-    $.ajax({
-      url:'https://api.github.com/users/copenbacon/repos',
-      type:'GET',
-      headers:{'Authorization': 'token ' + githubToken},
-      success:function(data, message, xhr){
-        console.log(data);
-        repos.allRepos = data;
-        callback();
-      }
-    });
+    $.when(
+     $.get('/github/users/copenbacon/repos', function(data){
+       reposObj.allRepos = data;
+     }),
+     $.get('/github/users/copenbacon/followers', function(data){
+       reposObj.followers = data;
+     })
+    ).done(callback);
   };
 
   repos.withTheAttribute = function(myAttr) {
