@@ -1,9 +1,8 @@
 (function(module) {
-  var repos = {};
+  var reposObj = {};
 
-  repos.allRepos = [];
-
-  repos.requestRepos = function(callback) {
+  reposObj.requestRepos = function(callback) {
+    // NOTE: refactor this request into an $.get call
     $.when(
      $.get('/github/users/copenbacon/repos', function(data){
        reposObj.allRepos = data;
@@ -14,11 +13,11 @@
     ).done(callback);
   };
 
-  repos.withTheAttribute = function(myAttr) {
-    return repos.allRepos.filter(function(aRepo) {
-      return aRepo[myAttr];
+  reposObj.withTheAttribute = function(attr) {
+    return reposObj.allRepos.filter(function(aRepo) {
+      return aRepo[attr];
     });
   };
 
-  module.repos = repos;
+  module.reposObj = reposObj;
 })(window);
