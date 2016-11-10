@@ -4,7 +4,12 @@
   width: 100%;
 }
 
-.header-menu:hover ul, .header-menu:active ul{
+.header-menu:hover ul{
+  display: block;
+  list-style-type: none;
+}
+
+.header-menu:active ul{
   display: block;
   list-style-type: none;
 }
