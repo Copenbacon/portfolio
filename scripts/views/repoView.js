@@ -4,12 +4,12 @@
 
   repoView.renderRepos = function() {
     $('#home-bottom-third').append(
-      repos.withTheAttribute('name')
+      reposObj.withTheAttribute('name')
       .map(repoCompiler)
     );
   };
 
-  repos.requestRepos(repoView.renderRepos);
+  reposObj.requestRepos(repoView.renderRepos);
 
   module.repoView = repoView;
 })(window);
