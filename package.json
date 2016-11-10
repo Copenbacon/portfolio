@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "description": "Portfolio and About Me",
   "main": "server.js",
-  "dependencies": {
-    "express": "^4.14.0"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sclary50@gmail.com",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-request-proxy": "^2.0.0"
+  }
 }
