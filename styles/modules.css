@@ -14,12 +14,22 @@
   list-style-type: none;
 }
 
-.icon-menu:hover ~ ul{
+span.icon-menu:hover ~ ul{
   display: block;
   list-style-type: none;
 }
 
-.icon-menu:active ~ ul{
+span.icon-menu:active ~ ul{
+  display: block;
+  list-style-type: none;
+}
+
+div.menu-icon-div:hover ~ ul{
+  display: block;
+  list-style-type: none;
+}
+
+div.menu-icon-div:active ~ ul{
   display: block;
   list-style-type: none;
 }
