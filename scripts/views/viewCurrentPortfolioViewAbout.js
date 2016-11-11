@@ -46,4 +46,5 @@
   AboutMe.fetchAll(AboutMeView.renderIndexPage);
   module.portfolioView = portfolioView;
   module.AboutMeView = AboutMeView;
+  module.menuClick = menuClick;
 })(window);
