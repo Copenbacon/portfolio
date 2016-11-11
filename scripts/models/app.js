@@ -106,6 +106,14 @@
     });
   };
 
+  $('body').on('click', function(){
+    $('.header-menu-ul').css({
+      display: 'none',
+      position: 'fixed',
+      width: '100%'
+    });
+  });
+
   module.Piece = Piece;
   module.AboutMe = AboutMe;
 })(window);
