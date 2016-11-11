@@ -1,14 +1,6 @@
 (function(module){
   var portfolioView = {};
   var AboutMeView = {};
-  var menuClick = {};
-
-  menuClick.clickTheMenu = function(){
-    $('.menu-icon-div').on('click', function(event){
-      event.preventDefault();
-      $('header-menu-ul').css('display', 'block');
-    });
-  };
 
   portfolioView.setTeasers = function() {
     $('.body-portfolio-item').hide();
@@ -46,5 +38,4 @@
   AboutMe.fetchAll(AboutMeView.renderIndexPage);
   module.portfolioView = portfolioView;
   module.AboutMeView = AboutMeView;
-  module.menuClick = menuClick;
 })(window);

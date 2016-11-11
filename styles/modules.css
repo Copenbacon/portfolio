@@ -9,31 +9,6 @@
   list-style-type: none;
 }
 
-.header-menu:active ul{
-  display: block;
-  list-style-type: none;
-}
-
-span.icon-menu:hover ~ ul{
-  display: block;
-  list-style-type: none;
-}
-
-span.icon-menu:active ~ ul{
-  display: block;
-  list-style-type: none;
-}
-
-div.menu-icon-div:hover ~ ul{
-  display: block;
-  list-style-type: none;
-}
-
-div.menu-icon-div:active ~ ul{
-  display: block;
-  list-style-type: none;
-}
-
 .header-menu-ul span{
   color: white;
   text-decoration: none;
