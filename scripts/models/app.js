@@ -108,9 +108,16 @@
 
   $('body').on('click', function(){
     $('.header-menu-ul').css({
-      display: 'none',
-      position: 'fixed',
-      width: '100%'
+      'display': 'none',
+      'position': 'fixed',
+      'width': '100%'
+    });
+  });
+
+  $('.header-menu').on('click', function(){
+    $('.header-menu-ul').css({
+      'display': 'block',
+      'list-style-type': 'none'
     });
   });
 
