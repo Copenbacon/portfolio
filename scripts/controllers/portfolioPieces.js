@@ -4,7 +4,6 @@
   portfolioController.reveal = function() {
     $('.contentBtn-content').hide();
     $('#home-top-third').fadeIn();
-    $('.header-menu-ul').hide();
     $('#blog-stats').hide();
     console.log('portfolio controller ran');
   };
