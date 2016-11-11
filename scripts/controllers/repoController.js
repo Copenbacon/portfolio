@@ -4,7 +4,7 @@
       $('.contentBtn-content').hide();
       $('#blog-stats').hide();
       $('#home-bottom-third').fadeIn();
-      $('header-menu-ul').hide();
+      $('.header-menu-ul').hide();
     }
   };
 
